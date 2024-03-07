@@ -1,16 +1,19 @@
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
+const body = document.getElementsByTagName("body")[0];
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
+    body.classList.add("scroll_disable");
   });
 }
 
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
+    body.classList.remove("scroll_disable");
   });
 }
 

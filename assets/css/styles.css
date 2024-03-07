@@ -257,6 +257,10 @@ body.dark-theme {
   color: transparent;
 }
 
+.scroll_disable {
+  overflow: hidden;
+}
+
 .home__container {
   row-gap: 2rem;
   padding-top: 1rem;
